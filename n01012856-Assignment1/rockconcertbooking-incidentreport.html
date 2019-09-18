@@ -2,9 +2,55 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Rock Concert Booking</title>
 </head>
 <body>
-    testing
+    <section>
+        <h1>Rock Concert Booking</h1>
+        <form method="post" action="https://postman-echo.com/post">
+
+            <h2>What is the first name of guest?</h2>
+            <input type="text" id=" first_name" name="first_name" />
+
+            <h2>What is the last name of guest?</h2>
+            <input type="text" id="last_name" name="last_name" />
+
+            <h2>Whose Shows are you interested in?</h2>
+            <div>
+                <input type="checkbox" id="show1" name="show_1" value="J-Star" /><label for="show_1">J-Star 's Show</label>
+            </div>
+            <div>
+                <input type="checkbox" id="show_2" name="show_2" value="Ammy" /><label for="show_2">Ammy's Folk Show</label>
+            </div>
+            <div>
+                <input type="checkbox" id="show_3" name="show_3" value="Baadshah" /><label for="show_3">Baadshah 's Show</label>
+            </div>
+
+            <h2>What time you want to book for?</h2>
+            <div>
+                <input type="radio" id="time_option1" name="time_option" value="9am-11am" /><label for="time_option1">9am-11am</label>
+            </div>
+            <div>
+                <input type="radio" id="time_option2" name="time_option" value="5pm-7pm" /><label for="time_option2">5pm-7pm</label>
+            </div>
+            <div>
+                <input type="radio" id="time_option3" name="time_option" value="9pm-11pm" /><label for="time_option3">9pm-11pm</label>
+            </div>
+
+            <div>
+                <h2>Which seats would you prefer?</h2>
+                <select id="seat_option" name="seat_option">
+                    <option value="Row1-Row2">Row1-Row2</option>
+                    <option value="Row3-Row5">Row3-Row5</option>
+                    <option value="Row6-Row8">Row6-Row8</option>
+                    <option value="Row9-Row10">Row9-Row10</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="submit"/>
+            </div>
+        </form>
+    </section>
+
 </body>
 </html>
