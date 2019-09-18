@@ -7,50 +7,49 @@
     <title>Server Rock Concert Booking</title>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <h1>Rock Concert Booking</h1>     
-    <div>
-        <label>What is guest first name:</label>
-        <asp:TextBox runat="server" ID="aspx_guest_firstname" ></asp:TextBox>
-    </div>
-    <div>
-         <label>What is guest last name?</label>
-        <asp:TextBox runat="server" ID="aspx_guest_lastname"></asp:TextBox>
-    </div>
-        <!--
-                    <div>
-                        <asp:RadioButtonList runat="server" ID="aspx_bachelor_favoritecolor">
-                            <asp:ListItem Text="RED" Value="red"></asp:ListItem>
-                            <asp:ListItem Text="BLUE" Value="blue"></asp:ListItem>
-                            <asp:ListItem Text="YELLOW" Value="yellow"></asp:ListItem>
-                        </asp:RadioButtonList>
-                    </div>
-               
-                <section>
-                    <h3>What is your favorite animal?</h3>
-                    <asp:DropDownList runat="server" ID="aspx_bachelor_favorite_animal">
-                        <asp:ListItem Text="Cat" Value="cat"></asp:ListItem>
-                        <asp:ListItem Text="Dog" Value="dog"></asp:ListItem>
-                        <asp:ListItem Text="Hampster" Value="hampster"></asp:ListItem>
-                    </asp:DropDownList>
-                </section>
-                <section>
-                    <h3>Where would you like to travel?</h3>
-                    <asp:CheckBoxList ID="aspx_bachelor_wishdestination" runat="server">
-                        <asp:ListItem Text="California" Value="california"></asp:ListItem>
-                        <asp:ListItem Text="North Pole" Value="northpole"></asp:ListItem>
-                        <asp:ListItem Text="Paris" Value="paris"></asp:ListItem>
-                    </asp:CheckBoxList>
-                </section>
-                <section>
-                    <h3>what is your hobby?</h3>
-                    <asp:TextBox runat="server" ID ="bachelor_hobby"></asp:TextBox>
-                </section>
-                <section>
-                    <asp:Button runat="server" text="submit" />
-                </section>
-            </div>
-        -->
+     <form id="form1" runat="server" method="post" action="https://postman-echo.com/post">
+     <section>
+            <h1>Rock Concert Booking</h1>     
+            <h2>What is guest first name:</h2>
+            <asp:TextBox runat="server" ID="aspx_guest_firstname" ></asp:TextBox>
+        
+    </section>
+    <section>
+            <h2>What is guest last name?</h2>
+            <asp:TextBox runat="server" ID="aspx_guest_lastname"></asp:TextBox>
+        
+    </section>
+    <section>
+            <h2>Whose shows are you interested in ?</h2>
+            <asp:CheckBoxList runat ="server" ID="aspx_shows">
+                <asp:ListItem Text="J-Star" value ="J-Star"></asp:ListItem>
+                <asp:ListItem Text="Ammy" value ="Ammy"></asp:ListItem>
+                <asp:ListItem Text="Baadshah" value ="Baadshah"></asp:ListItem>
+            </asp:CheckBoxList>
+     </section>
+
+     <section>
+            <h2>What time you want to book for?</h2>
+            <asp:RadioButtonList runat="server" ID="aspx_timeBooking">
+                <asp:ListItem Text="9am-11am" GroupName="timeOpt"></asp:ListItem>
+                <asp:ListItem Text="5pm-7pm" GroupName="timeOpt"></asp:ListItem>
+                <asp:ListItem Text="9pm-11pm" GroupName="timeOpt"></asp:ListItem>
+            </asp:RadioButtonList>
+    </section>
+
+    <section>
+             <h2>Which seats would you prefer?</h2>    
+             <asp:DropDownList  runat="server" ID="seats" >
+                 <asp:ListItem Text="Row1-Row2" Value="Row1-Row2"></asp:ListItem>
+                 <asp:ListItem Text="Row3-Row5" Value="Row3-Row5"></asp:ListItem>
+                 <asp:ListItem Text="Row6-Row8" Value="Row6-Row8"></asp:ListItem>
+                 <asp:ListItem Text="Row9-Row10" Value="Row9-Row10"></asp:ListItem>
+             </asp:DropDownList>
+    </section>
+    <section>
+        <asp:Button runat="server" ID="submit" text="submit"/>
+    </section>
+    
     </form>
 </body>
 </html>

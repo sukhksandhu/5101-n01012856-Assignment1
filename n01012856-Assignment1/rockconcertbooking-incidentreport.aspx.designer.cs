@@ -40,39 +40,39 @@ namespace n01012856_Assignment1 {
         protected global::System.Web.UI.WebControls.TextBox aspx_guest_lastname;
         
         /// <summary>
-        /// aspx_bachelor_favoritecolor control.
+        /// aspx_shows control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList aspx_bachelor_favoritecolor;
+        protected global::System.Web.UI.WebControls.CheckBoxList aspx_shows;
         
         /// <summary>
-        /// aspx_bachelor_favorite_animal control.
+        /// aspx_timeBooking control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList aspx_bachelor_favorite_animal;
+        protected global::System.Web.UI.WebControls.RadioButtonList aspx_timeBooking;
         
         /// <summary>
-        /// aspx_bachelor_wishdestination control.
+        /// seats control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList aspx_bachelor_wishdestination;
+        protected global::System.Web.UI.WebControls.DropDownList seats;
         
         /// <summary>
-        /// bachelor_hobby control.
+        /// submit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox bachelor_hobby;
+        protected global::System.Web.UI.WebControls.Button submit;
     }
 }
