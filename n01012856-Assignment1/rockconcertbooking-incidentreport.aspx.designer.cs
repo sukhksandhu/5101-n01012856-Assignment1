@@ -40,6 +40,15 @@ namespace n01012856_Assignment1 {
         protected global::System.Web.UI.WebControls.TextBox aspx_guest_lastname;
         
         /// <summary>
+        /// aspx_guest_email control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox aspx_guest_email;
+        
+        /// <summary>
         /// aspx_shows control.
         /// </summary>
         /// <remarks>
@@ -49,30 +58,39 @@ namespace n01012856_Assignment1 {
         protected global::System.Web.UI.WebControls.CheckBoxList aspx_shows;
         
         /// <summary>
-        /// aspx_timeBooking control.
+        /// aspx_time_booking control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList aspx_timeBooking;
+        protected global::System.Web.UI.WebControls.RadioButtonList aspx_time_booking;
         
         /// <summary>
-        /// seats control.
+        /// aspx_seats control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList seats;
+        protected global::System.Web.UI.WebControls.DropDownList aspx_seats;
         
         /// <summary>
-        /// submit control.
+        /// aspx_guestnum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submit;
+        protected global::System.Web.UI.WebControls.TextBox aspx_guestnum;
+        
+        /// <summary>
+        /// confirmbox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl confirmbox;
     }
 }

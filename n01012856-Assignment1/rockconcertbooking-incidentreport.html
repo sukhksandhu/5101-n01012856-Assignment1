@@ -10,14 +10,14 @@
         <form method="post" action="https://postman-echo.com/post">
 
             <h2>What is the first name of guest?</h2>
-            <input type="text" id=" first_name" name="first_name" />
+            <input type="text" id=" guest_first_name" name="guest_first_name" />
 
             <h2>What is the last name of guest?</h2>
-            <input type="text" id="last_name" name="last_name" />
+            <input type="text" id="guest_last_name" name="guest_last_name" />
 
             <h2>Whose Shows are you interested in?</h2>
             <div>
-                <input type="checkbox" id="show1" name="show_1" value="J-Star" /><label for="show_1">J-Star 's Show</label>
+                <input type="checkbox" id="show_1" name="show_1" value="J-Star" /><label for="show_1">J-Star 's Show</label>
             </div>
             <div>
                 <input type="checkbox" id="show_2" name="show_2" value="Ammy" /><label for="show_2">Ammy's Folk Show</label>
@@ -28,22 +28,22 @@
 
             <h2>What time you want to book for?</h2>
             <div>
-                <input type="radio" id="time_option1" name="time_option" value="9am-11am" /><label for="time_option1">9am-11am</label>
+                <input type="radio" id="time_option1" name="time_option" value="9:00-11:00" /><label for="time_option1">9:00-11:00</label>
             </div>
             <div>
-                <input type="radio" id="time_option2" name="time_option" value="5pm-7pm" /><label for="time_option2">5pm-7pm</label>
+                <input type="radio" id="time_option2" name="time_option" value="17:00-19:00" /><label for="time_option2">17:00-19:00</label>
             </div>
             <div>
-                <input type="radio" id="time_option3" name="time_option" value="9pm-11pm" /><label for="time_option3">9pm-11pm</label>
+                <input type="radio" id="time_option3" name="time_option" value="21:00-23:00" /><label for="time_option3">21:00-23:00</label>
             </div>
 
             <div>
                 <h2>Which seats would you prefer?</h2>
                 <select id="seat_option" name="seat_option">
-                    <option value="Row1-Row2">Row1-Row2</option>
-                    <option value="Row3-Row5">Row3-Row5</option>
-                    <option value="Row6-Row8">Row6-Row8</option>
-                    <option value="Row9-Row10">Row9-Row10</option>
+                    <option id="seat_option1" value="Row1-Row2">Row1-Row2</option>
+                    <option id="seat_option2" value="Row3-Row5">Row3-Row5</option>
+                    <option id="seat_option3" value="Row6-Row8">Row6-Row8</option>
+                    <option id="seat_option4" value="Row9-Row10">Row9-Row10</option>
                 </select>
             </div>
             <div>
