@@ -22,6 +22,7 @@
         <section>
             <h2>What is your Email?</h2>
             <asp:TextBox runat="server" ID="aspx_guest_email"></asp:TextBox>
+            <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please write guest emailID" ControlToValidate="aspx_guest_email"></asp:RequiredFieldValidator>
             <!--the author-Raktim Biswas,site-https://stackoverflow.com/questions/5342375/regex-email-validation, date accessed-25september,2019, and the purpose:for in class assignment for the validation of email*-->
             <asp:RegularExpressionValidator runat="server" EnableClientScript="true" ErrorMessage="Please enter valid email Id" ControlToValidate="aspx_guest_email" ValidationExpression="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"></asp:RegularExpressionValidator>
         </section>
@@ -58,6 +59,7 @@
         <section>
             <h2>How many Guests are you bringing with you(maximum 4)?</h2>
             <asp:TextBox runat="server" ID="aspx_guestnum"></asp:TextBox>
+            <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please select guests you are bringing" ControlToValidate="aspx_guestnum"></asp:RequiredFieldValidator>
             <asp:RangeValidator runat="server" EnableClientScript="true" ErrorMessage="Please enter valid number of guest 0-4" ControlToValidate="aspx_guestnum" MinimumValue="0" MaximumValue="4"></asp:RangeValidator>
         </section>
         <section>
